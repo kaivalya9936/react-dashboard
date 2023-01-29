@@ -22,7 +22,7 @@ ChartJS.register(
   );
 function BarChart({ chartData }) {
     if (!Object.keys(chartData).length) {
-        return <div>Loading Pie chart...</div>;
+        return <div>Loading Stacked Bar chart...</div>;
       }
       else{
 
