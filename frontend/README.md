@@ -1,70 +1,13 @@
-# Getting Started with Create React App
+# IPL Dashboard
+This project is a simple dashboard built with React , SQLite, and Django. It features a basic navigation bar that uses React Router's Route and Link components to navigate between different pages. The main focus of the dashboard is to display a bar chart and a pie chart, both of which are built using the BarChart and PieChart components from the popular react-chartjs-2 library. The data used to populate these charts is stored in a SQLite database and is accessed using Django's ORM. The project serves as a demonstration of how to create a simple dashboard using these technologies, and it can be used as a starting point for building more complex dashboards in the future.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Database Schema
+This dashboard uses a database schema with two tables: "Matches" and "Deliveries". The "Matches" table contains information about the match such as match_id, season, city, date, teams playing, toss winner, result, and other details. The "Deliveries" table contains information about the deliveries in a match such as the delivery id, inning, batting team, bowling team, batsman, bowler, runs, and other details. The database schema has been implemented using Django ORM. The match_id from the Matches table is used as the foreign key in the Deliveries table.
 
-## Available Scripts
+## Components used
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* About - This is the component for the about page.
+* Components - This is the page for this current page which explains the components used.
+* PieChart - This is the pie chart from react-chartjs-2 which is used to plot the chart for the number of games played every year
+* BarChart - This is a stacked horizontal bar graph from react-chartjs-2 which is the landing page's IInd graph.
+* BarChart2 - This is the component which is used to plot the rest of the 3 graphs. It is a vertical graph from react-chartjs-2
