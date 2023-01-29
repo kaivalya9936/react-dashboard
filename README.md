@@ -11,3 +11,33 @@ This dashboard uses a database schema with two tables: "Matches" and "Deliveries
 * PieChart - This is the pie chart from react-chartjs-2 which is used to plot the chart for the number of games played every year
 * BarChart - This is a stacked horizontal bar graph from react-chartjs-2 which is the landing page's IInd graph.
 * BarChart2 - This is the component which is used to plot the rest of the 3 graphs. It is a vertical graph from react-chartjs-2
+
+## Getting started
+Clone the repo and open a terminal in that folder.
+
+### Backend
+
+Run the following commands in the terminal
+
+``` 
+cd backend
+
+./env/Scripts/activate
+
+python manage.py runserver
+
+```
+
+### Frontend
+Open a new terminal in the cloned repository folder
+Run the following commands to start the frontend:
+
+```
+cd frontend
+
+npm install
+
+npm start
+
+```
+
