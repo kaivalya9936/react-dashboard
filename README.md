@@ -41,3 +41,11 @@ npm start
 
 ```
 
+## Demo
+
+Copy and paste this link to your browser to view a video demo of the web app in action:
+
+```
+https://drive.google.com/file/d/1p4COz9lysLGOnv7ZQq0NHND2N6D-giPG/view?usp=sharing
+```
+
